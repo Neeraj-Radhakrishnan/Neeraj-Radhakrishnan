@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+body{
+    min-height: 1000px;
+    margin: 0;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/cover\ new.jpg);
+    background-size: cover;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 5em;
+    color:whitesmoke;
+}
+.banner .content p{
+    font-size: 1em;
+    color: white;
+}
+.btn{
+    font-size: 1em;
+    color: white;
+    background-color: brown;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s ease-in-out;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .name{
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .name span
+{
+    color: red;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a {
+    text-decoration: none;
+    color:seashell;
+    font-weight: 300px;
+}
+header .navigation li a:hover{
+    color:red;
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+.titleText{
+    color: black;
+    font-size: 2em;
+    font-weight: 400;
+}
+.titleText span{
+    color: red;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.row .col50 .imgbg{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+.row .col50 .imgbg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    height: 100vh;
+    border: 10px solid white;
+    box-shadow: 0 5px 35px rgba(0, 0, 0,0.08  );
+}
+.menu .content .box .imgbg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.menu .content .box .imgbg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+.menu .content .box .text h3{
+    font-weight: 400;
+    color: black;
+}
+.pic1 , .pic2 , .pic3{
+    position: relative;
+    opacity: 80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pic1{
+    margin-top: 20px;
+    background-image: url(./images/food\ one.jpg);
+    min-height: 100vh;
+}
+.pic2{
+    background-image: url(./images/pool\ side\ dine.jpg);
+    min-height: 100vh;
+}
+.pic3{
+    background-image: url(./images/interior\ dine.jpg);
+    min-height: 100vh;
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-light{
+    background-color: white;
+    color: black;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.ptext .border{
+    background-color: lightgray;
+    color: black;
+    padding: 20px;
+}
+.contact{
+    background: url(./images/rest.jpg);
+    background-size: cover;
+}
+.contactForm{
+    padding: 75px 50px;
+    background: lightgray;
+    box-shadow: 0 15px 50px rgba(0, 0, 0,0.1 );
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactForm h3{
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input , .contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: black;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+@media(max-width:991px)
+{
+    header .navigation
+    {
+        display: none;
+    }
+    section{
+        padding: 20px;
+
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: white;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgbg{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content{
+        margin-top: 20px;
+    }
+   
+    .pic1 , .pic2, .pic3{
+        background-attachment: scroll;
+    }
+}
